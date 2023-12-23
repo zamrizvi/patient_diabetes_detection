@@ -259,7 +259,7 @@ if page == "Home":
     st.write(df.info())
 
 
-    #TESTING MY VISUALS 
+     
     st.write("Scatter Plot")
     fig2 = scatter_plot(df, 'age', 'bmi')
     st.pyplot(fig2)
