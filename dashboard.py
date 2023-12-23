@@ -26,7 +26,7 @@ from sklearn.metrics import roc_curve, auc, roc_auc_score
 @st.cache
 def load__data_preprocess():
     columns_to_keep = ['age', 'hypertension', 'heart_disease', 'bmi', 'HbA1c_level', 'blood_glucose_level', 'diabetes']
-    data = pd.read_csv('../archive/diabetes_prediction_dataset.csv')
+    data = pd.read_csv('../diabetes_prediction_dataset.csv')
     data = data[columns_to_keep]
     data.dropna()
     return data
